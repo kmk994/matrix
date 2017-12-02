@@ -26,11 +26,11 @@ public class Matrix {
     }
 
     public Matrix multiply(Matrix other) {
-        double[][] output = new double[this.rowSize][this.columnSize];
+        double[][] output = new double[this.rowSize][other.columnSize];
         for (int x = 0; x < this.rowSize; x++) {
-            for (int y = 0; y < columnSize; y++) {
-                for (int k = 0; k < this.columnSize; k++) {
-                    output[x][y] += this.get(x, k) * other.get(y, x);
+            for (int y = 0; y < other.columnSize; y++) {
+                for (int k = 0; k < other.columnSize; k++) {
+                    output[x][y] += this.get(x, k) * other.get(k, y);
                 }
             }
 

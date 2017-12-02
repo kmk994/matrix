@@ -73,7 +73,7 @@ public class MatrixTest {
     @Test
     public void shouldMultiplyTwoMatrices2() {
         //given
-        Matrix a = new Matrix(3, 3,
+        Matrix a = new Matrix(2, 3,
                 new double[][]{
 
                         {1.0, 2.0, 3.0},
@@ -81,7 +81,7 @@ public class MatrixTest {
 
                 });
 
-        Matrix b = new Matrix(3, 3,
+        Matrix b = new Matrix(3,2,
                 new double[][]{
                         {1.0, 2.0},
                         {3.0, 4.0},
